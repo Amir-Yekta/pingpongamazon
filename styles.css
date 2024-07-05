@@ -1,0 +1,150 @@
+/* Basic resets and overall body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* Header styles */
+header {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.header-content {
+    position: relative;
+    height: 50vh; /* Keeps header responsive */
+}
+
+.header-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.overlay-text h1 {
+    font-size: 4vw; /* Responsive font size */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5em 0;
+}
+
+.event-date {
+    font-size: 1.2vw; /* Responsive font size */
+    background-color: rgba(242, 209, 61, 0.8);
+    padding: 1vw;
+    border-radius: 1vw;
+    margin: 1vw auto;
+    width: auto;
+}
+
+/* Section styling */
+#why-register .content-box, #how-to-register .content-box, #register .content-box {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    border-radius: 5vw; /* Responsive border radius */
+    overflow: hidden;
+    margin: 2vw;
+    padding: 2vw;
+}
+
+#why-register img, #how-to-register img {
+    width: 40%;
+    border-radius: 2vw; /* Responsive border radius */
+    object-fit: cover;
+}
+
+.text-content {
+    color: white;
+    padding: 1vw;
+    font-size: 1.2vw; /* Responsive font size */
+    width: 60%;
+}
+
+#register .content-box {
+    flex-direction: column; /* Stacks elements vertically */
+    padding: 4vw; /* Larger padding */
+    background-color: #222; /* Dark background */
+    color: #ff0; /* Bright text color */
+    border-radius: 1vw; /* Rounded corners */
+    text-align: center; /* Center the text */
+}
+
+#register form {
+    width: 70%; /* Adaptive width */
+    margin: 2vw auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#register h2 {
+    margin-bottom: 2vw; /* Space below heading */
+    font-size: 2vw; /* Larger font size */
+}
+
+label {
+    font-size: 1.2vw; /* Responsive font size */
+    color: #fff; /* White text color */
+    margin: 1vw 0;
+    text-align: left;
+    width: 100%;
+}
+
+input[type="text"], 
+input[type="number"], 
+button {
+    padding: 1.5vw;
+    margin-bottom: 2vw;
+    border: 0.1vw solid #ccc;
+    border-radius: 0.5vw;
+    background-color: #ddd; /* Light gray background */
+    color: #000; /* Dark text color */
+    font-size: 1.2vw; /* Responsive font size */
+    width: 100%; /* Full width */
+}
+
+button {
+    background-color: #905d00;
+    border-radius: 0.5vw;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00564f;
+}
+
+/* Footer styling */
+footer {
+    padding: 1vw;
+    background-color: #022731;
+    color: white;
+    font-size: 1.5vw; /* Responsive font size */
+}
+
+footer a {
+    color: #ffd700;
+}
+
+/* Media Queries for smaller screens */
+
+
